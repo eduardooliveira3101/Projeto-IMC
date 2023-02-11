@@ -181,13 +181,28 @@ form button:hover {
 
 @media (max-width: 490px) {
 
+    body {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .container {
+        height: 90vh;
+        display: grid;
+    }
+
     .card {
         padding: 3rem;
-        max-width: 30rem;
+        min-width: 25rem;
+        height: 42rem;
     }
 
     form  {
-        width: 20rem;
+        width: 30rem;
+    }
+
+    form h1 {
+        text-align: center;
     }
 
     .modal button {
